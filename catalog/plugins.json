@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-09-04",
+  "scope": "Metadata-only inventory of locally cached Codex plugin versions; presence in the cache does not prove current activation.",
+  "source_root": "CODEX_HOME/plugins/cache",
+  "content_policy": "Plugin implementation, skill bodies, packaged assets, connector settings, credentials, sessions, and databases are not included.",
+  "plugin_count": 19,
+  "skill_count": 50,
+  "providers": {
+    "openai-bundled": 5,
+    "openai-curated-remote": 9,
+    "openai-primary-runtime": 5
+  },
+  "duplicate_skill_names": [],
+  "local_skill_directory_name_overlaps": [
+    {
+      "name": "notion-knowledge-capture",
+      "plugin": "notion@openai-curated-remote",
+      "local_source": "CODEX_HOME/skills/notion-knowledge-capture"
+    }
+  ],
+  "official_template_kinds": {
+    "spreadsheet": 6,
+    "presentation": 7,
+    "document": 7
+  },
+  "claude_plugins_directory_present": false,
+  "plugins": [
+    {
+      "id": "browser@openai-bundled",
+      "provider": "openai-bundled",
+      "name": "browser",
+      "display_name": "Browser",
+      "cache_version": "26.901.22334",
+      "manifest_version": "26.901.22334",
+      "description": "Browser / browser-use plugin\n\nAliases: @browser, @browser-use, browser-use, Browser, in-app browser.\n\nUse Browser, the ChatGPT in-app browser, when the user asks to open, inspect, navigate, test, click, type, or screenshot local web targets such as localhost, 127.0.0.1, ::1, file:// URLs, or the current in-app browser tab.\n\nAfter significant frontend changes to a local app, use Browser to open the relevant local target when it is known or obvious, unless the user asks for another browser tool.\n\nFor requests like \"open localhost:3000\" or \"open to localhost:4000\", navigate the in-app browser to http://localhost:3000 or http://localhost:4000.\n\nDo not satisfy explicit @browser or @browser-use requests with macOS `open`, shell commands, or generic web browsing unless the user asks for another browser tool or approves a fallback.",
+      "author": "OpenAI",
+      "license": "Proprietary",
+      "homepage": "https://github.com/openai/openai/tree/master/lib/browser_use/plugin",
+      "repository": "https://github.com/openai/openai/tree/master/lib/browser_use/plugin",
+      "source": "openai-bundled/browser/26.901.22334",
+      "skills": [],
+      "skill_count": 0
+    },
+    {
+      "id": "codex-app-tools@openai-bundled",
+      "provider": "openai-bundled",
+      "name": "codex-app-tools",
+      "display_name": "codex-app-tools",
+      "cache_version": "0.1.3",
+      "manifest_version": "0.1.3",
+      "description": "Exposes Codex desktop app tools through one local MCP server.",
+      "author": "OpenAI",
+      "license": "Proprietary",
+      "source": "openai-bundled/codex-app-tools/0.1.3",
+      "skills": [],
+      "skill_count": 0
+    },
+    {
+      "id": "sites@openai-bundled",
+      "provider": "openai-bundled",
+      "name": "sites",
+      "display_name": "Sites",
+      "cache_version": "0.1.57",
+      "manifest_version": "0.1.57",
+      "description": "Build and deploy websites with Sites. Use of Sites is subject to the ChatGPT Sites Terms (https://openai.com/policies/chatgpt-sites-terms/), and you are responsible for your website content.",
+      "author": "OpenAI",
+      "license": "Proprietary",
+      "homepage": "https://openai.com/",
+      "source": "openai-bundled/sites/0.1.57",
+      "skills": [
+        {
+          "name": "sites-building",
+          "folder": "sites-building",
+          "description": "Use Sites to build websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Always use Sites when the project contains `.openai/hosting.json`.",
+          "source": "openai-bundled/sites/0.1.57/skills/sites-building/SKILL.md"
+        },
+        {
+          "name": "sites-hosting",
+          "folder": "sites-hosting",
+          "description": "Host websites with Sites. Always use after `sites-building`, and use for website publishing, deployment, hosting management, or projects containing `.openai/hosting.json`.",
+          "source": "openai-bundled/sites/0.1.57/skills/sites-hosting/SKILL.md"
+        }
+      ],
+      "skill_count": 2
+    },
+    {
+      "id": "unified-computer-use@openai-bundled",
+      "provider": "openai-bundled",
+      "name": "unified-computer-use",
+      "display_name": "unified-computer-use",
+      "cache_version": "26.901.22334",
+      "manifest_version": "26.901.22334",
+      "description": "App-managed browser automation runtime.",
+      "source": "openai-bundled/unified-computer-use/26.901.22334",
+      "skills": [],
+      "skill_count": 0
+    },
+    {
+      "id": "visualize@openai-bundled",
+      "provider": "openai-bundled",
+      "name": "visualize",
+      "display_name": "Visualize",
+      "cache_version": "1.0.29",
+      "manifest_version": "1.0.29",
+      "description": "Create interactive charts, maps, diagrams, simulations, 3D models, data explorers, and UI previews directly in Codex.",
+      "author": "OpenAI",
+      "license": "Proprietary",
+      "homepage": "https://openai.com/",
+      "source": "openai-bundled/visualize/1.0.29",
+      "skills": [
+        {
+          "name": "visualize",
+          "folder": "visualize",
+          "description": "Create visualizations and interactive tools directly in conversation. Proactively use to show how something works; explore 'what happens when', 'what changes', or 'help me understand'; compare or inspect; create simulations, maps, charts, graphs, and mockups. Use standard tools for static scientific figures.",
+          "source": "openai-bundled/visualize/1.0.29/skills/visualize/SKILL.md"
+        }
+      ],
+      "skill_count": 1
+    },
+    {
+      "id": "app-69312da8e4dc81919370cb86fd172b6c@openai-curated-remote",
+      "provider": "openai-curated-remote",
+      "name": "app-69312da8e4dc81919370cb86fd172b6c",
+      "display_name": "Adobe",
+      "cache_version": "8.0.0",
+      "manifest_version": "8.0.0",
+      "description": "Adobe unlocks more ways to create and get work done from the conversation. Previously available as Photoshop, the Adobe connector now brings creativity and productivity capabilities across Creative Cloud and Acrobat. Describe what you want to make or change, and Adobe can help turn ideas, images, videos, and documents into polished outputs — from editing photos and creating PDFs to designing social assets, resizing videos, searching Creative Cloud assets, and generating data-driven documents.\nKey capabilities:\n\n* Retouch portraits or edit photos in bulk: Drop in photos and describe the look you want — adjust color, lighting, and tone; remove distractions and generate new elements; apply Lightroom presets; remove backgrounds; blur, crop, resize, and expand images.\n* Design from template: Start from an Express template, update text and colors, and then animate for social media or convert to PDF.\n* Refine video for any platform: Upload a horizontal clip and ask to reformat it for YouTube Shorts, Instagram Reels, or any platform. You can also stitch clips into a single sequence.\n* Search and organize creative work: Describe what you're looking for and surface assets from your Creative Cloud library — by subject, style, mood, or content — without browsing folders.\n* Work with PDFs and documents: Create and convert polished PDFs and documents.\n* Create data-driven documents: Describe your output and provide your data — the connector turns raw data or content into formatted, shareable PDFs, including badges, cards, catalogs, and more.\n\nYou can get started as a guest, and sign in with your Adobe account for more capabilities and tools, Creative Cloud storage, and saved work across sessions.",
+      "author": "Adobe Inc",
+      "source": "openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0",
+      "skills": [
+        {
+          "name": "adobe-batch-edit-photos",
+          "folder": "adobe-batch-edit-photos",
+          "description": "Apply consistent photo adjustments across a set of images so they look like they were edited together. Use this skill whenever the user says \"make my photos look cohesive\", \"give all these the same style\", \"apply a warm and golden feel to all of these\", \"make this cinematic\", \"match the look across my photos\", \"edit all my travel photos the same way\", \"batch edit these\", \"make these consistent\", \"fix my phone photos\", or uploads a folder of photos and wants a unified, polished result. Also triggers for requests like \"apply a preset to all of these\", \"make these look professional\", or \"they were shot in mixed lighting — can you fix them all\". Outputs direct final image URLs plus an in-chat preview grid and optional Firefly Board link. Access: 🔐 Signed-In required | Gen AI: ❌",
+          "source": "openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-batch-edit-photos/SKILL.md"
+        },
+        {
+          "name": "adobe-create-mockups",
+          "folder": "adobe-create-mockups",
+          "description": "Use when a user wants to see their logo, design, or sketch on a product or scene mockup — mugs, t-shirts, business cards, hats, phone screens, posters, billboards, or similar. Triggers on \"create mockups\", \"show my logo on products\", or any logo upload with a request to visualize it on items. Access: 🔐 Signed-In required | Gen AI: ✅ Adobe Firefly via `image_generate` used for design creation, sketch polishing, and mockup scene generation",
+          "source": "openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-mockups/SKILL.md"
+        },
+        {
+          "name": "adobe-create-social-variations",
+          "folder": "adobe-create-social-variations",
+          "description": "Resize, crop, or export any image or video into platform-ready social media assets using Adobe Creative Cloud tools. Use this skill when a user wants to prepare a photo, image, or video for one or more social platforms — Instagram, TikTok, LinkedIn, Facebook, YouTube, Snapchat, Pinterest, Threads, or X/Twitter. Triggers on: \"prepare my image for Instagram\", \"resize for TikTok\", \"get this ready to post\", \"make versions for all platforms\", \"social media sizes\", \"crop for stories\", \"export for LinkedIn\", \"resize my video for social\", \"make social media assets\", or any request to adapt a photo or video for specific platforms. Handles subject-aware cropping, AI canvas expansion, test previews before full runs, and same-ratio video resizing.",
+          "source": "openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-social-variations/SKILL.md"
+        },
+        {
+          "name": "adobe-design-from-template",
+          "folder": "adobe-design-from-template",
+          "description": "Create any visual design using Adobe Express templates — flyers, posters, social media posts (Instagram, Facebook, LinkedIn), business cards, invitations, greeting cards, resumes, cover letters, brochures, newsletters, certificates, presentations, YouTube thumbnails, email headers, logos, menus, and labels. Use this skill whenever the user wants to make, design, or build any visual — even if they just say \"make me a flyer\", \"design a poster\", \"I need something for Instagram\", \"create an event invite\", or \"make a business card\". Also handles browsing templates, editing text, replacing images, changing backgrounds, animating, and exporting designs. Access: 🔐 Signed-In required | Gen AI: ❌ by default — image replacement only where the surface permits generative AI (e.g. Codex); none on Claude",
+          "source": "openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-design-from-template/SKILL.md"
+        },
+        {
+          "name": "adobe-edit-quick-cut",
+          "folder": "adobe-edit-quick-cut",
+          "description": "Create a punchy sizzle reel from a video using Adobe Quick Cut. Use this skill whenever a user wants to cut, trim, or shorten a video into highlights — including phrases like \"make a sizzle reel\", \"make a highlight reel\", \"quick cut this\", \"cut the best parts\", \"shorten this video\", \"make a highlight clip\", \"summarize this video visually\", or any request to produce a shorter edited version of a video. Use this skill for Quick Cut requests before suggesting manual editing in Premiere. Requires the user to upload a video file.",
+          "source": "openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-edit-quick-cut/SKILL.md"
+        },
+        {
+          "name": "adobe-retouch-portraits",
+          "folder": "adobe-retouch-portraits",
+          "description": "Bulk-retouch a folder of portrait photos using Adobe tools — designed for wedding photographers and event photographers who need fast, walk-away batch processing. Use this skill when the user says \"retouch my photos\", \"batch process these portraits\", \"process my wedding photos\", \"clean up this folder of images\", \"run my headshots through Adobe\", or uploads/selects a folder of photos and wants them polished and ready to review. Automatically applies auto-straighten, auto-tone, and auto-light to every image. Outputs a preview grid and download folder. Access: 🔐 Signed-In required | Gen AI: ❌ by default — optional background-only cleanup only where the surface permits generative AI (e.g. Codex); none on Claude",
+          "source": "openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-retouch-portraits/SKILL.md"
+        }
+      ],
+      "skill_count": 6
+    },
+    {
+      "id": "app-6a172ed01fd4819188c0cbd26e01ced6@openai-curated-remote",
+      "provider": "openai-curated-remote",
+      "name": "app-6a172ed01fd4819188c0cbd26e01ced6",
+      "display_name": "Markdown by mdedit.ai",
+      "cache_version": "0.1.1",
+      "manifest_version": "0.1.1",
+      "description": "Create and save private Markdown documents in mdedit.ai directly from your conversation. Find and revise saved documents across your workspaces, then publish or unpublish a shareable link when you choose. Publishing always requires your explicit confirmation.",
+      "author": "Vivek Kumar Maskara",
+      "source": "openai-curated-remote/app-6a172ed01fd4819188c0cbd26e01ced6/0.1.1",
+      "skills": [
+        {
+          "name": "find-mdedit-document",
+          "folder": "find-mdedit-document",
+          "description": "Find and read an existing Markdown Document stored in mdedit. Use when the user asks to locate, open, retrieve, quote, summarize, or inspect a saved mdedit document. Do not use for local files, web pages, or generic Markdown questions unrelated to mdedit storage.",
+          "source": "openai-curated-remote/app-6a172ed01fd4819188c0cbd26e01ced6/0.1.1/skills/find-mdedit-document/SKILL.md"
+        },
+        {
+          "name": "publish-mdedit-document",
+          "folder": "publish-mdedit-document",
+          "description": "Check or change Public Document Publishing for an existing mdedit Markdown Document. Use when the user explicitly asks to publish, unpublish, inspect publication status, or create or update a public mded.it link. Do not use for private editor links, local files, or generic sharing advice.",
+          "source": "openai-curated-remote/app-6a172ed01fd4819188c0cbd26e01ced6/0.1.1/skills/publish-mdedit-document/SKILL.md"
+        },
+        {
+          "name": "revise-mdedit-document",
+          "folder": "revise-mdedit-document",
+          "description": "Safely revise an existing Markdown Document stored in mdedit with anchored, conflict-aware edits. Use when the user asks to update, rewrite, correct, insert, remove, or reorganize content in a saved mdedit document. Do not use for unsaved local Markdown, local files, or generic editing advice.",
+          "source": "openai-curated-remote/app-6a172ed01fd4819188c0cbd26e01ced6/0.1.1/skills/revise-mdedit-document/SKILL.md"
+        },
+        {
+          "name": "save-mdedit-document",
+          "folder": "save-mdedit-document",
+          "description": "Create and durably save a private Markdown Document in mdedit. Use when the user explicitly asks to save, persist, archive, or turn conversation content into a document in mdedit. Do not use for generic Markdown writing, formatting, or local-file creation that does not require mdedit storage.",
+          "source": "openai-curated-remote/app-6a172ed01fd4819188c0cbd26e01ced6/0.1.1/skills/save-mdedit-document/SKILL.md"
+        }
+      ],
+      "skill_count": 4
+    },
+    {
+      "id": "deep-research-work@openai-curated-remote",
+      "provider": "openai-curated-remote",
+      "name": "deep-research-work",
+      "display_name": "Deep Research",
+      "cache_version": "0.1.14",
+      "manifest_version": "0.1.14",
+      "description": "Conduct cited, multi-pass research inside the current Work or Codex session.",
+      "author": "OpenAI",
+      "license": "Proprietary",
+      "homepage": "https://openai.com/",
+      "repository": "https://github.com/openai/openai/tree/master/chatgpt/oai-maintained-plugins/plugins/deep-research-work",
+      "source": "openai-curated-remote/deep-research-work/0.1.14",
+      "skills": [
+        {
+          "name": "deep-research",
+          "folder": "deep-research",
+          "description": "Conduct thorough research using authoritative sources and produce evidence-backed findings with citations. Use this skill only when the user asks specifically for Deep research, uses $deep-research, or selects Deep research in Work mode. Do not use it for ordinary research requests.",
+          "source": "openai-curated-remote/deep-research-work/0.1.14/skills/deep-research/SKILL.md"
+        }
+      ],
+      "skill_count": 1
+    },
+    {
+      "id": "github@openai-curated-remote",
+      "provider": "openai-curated-remote",
+      "name": "github",
+      "display_name": "GitHub",
+      "cache_version": "0.1.12-5f7cd798dc99",
+      "manifest_version": "0.1.12-5f7cd798dc99",
+      "description": "Inspect repositories, triage pull requests and issues, debug CI, and publish changes through a hybrid GitHub connector and CLI workflow.",
+      "author": "OpenAI",
+      "license": "MIT",
+      "homepage": "https://github.com/",
+      "repository": "https://github.com/openai/plugins",
+      "source": "openai-curated-remote/github/0.1.12-5f7cd798dc99",
+      "skills": [],
+      "skill_count": 0
+    },
+    {
+      "id": "gmail@openai-curated-remote",
+      "provider": "openai-curated-remote",
+      "name": "gmail",
+      "display_name": "Gmail",
+      "cache_version": "0.1.10",
+      "manifest_version": "0.1.10",
+      "description": "Work with Gmail using the configured Gmail app connector.",
+      "author": "OpenAI",
+      "license": "MIT",
+      "homepage": "https://workspace.google.com/products/gmail/",
+      "repository": "https://github.com/openai/openai/tree/master/chatgpt/oai-maintained-plugins",
+      "source": "openai-curated-remote/gmail/0.1.10",
+      "skills": [],
+      "skill_count": 0
+    },
+    {
+      "id": "google-drive@openai-curated-remote",
+      "provider": "openai-curated-remote",
+      "name": "google-drive",
+      "display_name": "Google Drive",
+      "cache_version": "0.1.16",
+      "manifest_version": "0.1.16",
+      "description": "Use Google Drive as the single entrypoint for Drive, Docs, Sheets, and Slides work.",
+      "author": "OpenAI",
+      "license": "MIT",
+      "homepage": "https://workspace.google.com/products/drive/",
+      "repository": "https://github.com/openai/plugins",
+      "source": "openai-curated-remote/google-drive/0.1.16",
+      "skills": [
+        {
+          "name": "google-docs",
+          "folder": "google-docs",
+          "description": "Prompt- and template-complete Google Docs creation and editing with explicit-instruction-authoritative structural preservation, including semantic roles, relationships, comparison dimensions, and instructed extensions; full-topology native-copy routing; source-grounded per-tab adaptation for past/example references; style-preserving hyperlink and table edits; canonical smart-chip-first authoring for dates and relevant supported people or Google resources; a file-backed advisory trusted read before existing-document writes; automatic protected-control awareness; direct connector APIs by default; DOCX-first import only when no supplied Google Doc template/reference constrains the output; and checked-in code mode only for exact native dropdown mutation. Use when Codex must create, edit, fill, adapt, redesign, or verify Google Docs without overriding explicit user/template instructions, adding unrequested document scope, or carrying stale reference facts into a new deliverable.",
+          "source": "openai-curated-remote/google-drive/0.1.16/skills/google-docs/SKILL.md"
+        },
+        {
+          "name": "google-drive",
+          "folder": "google-drive",
+          "description": "Use connected Google Drive as the single entrypoint for Drive, Docs, Sheets, and Slides work. Use when the user wants to find, fetch, organize, share, export, copy, or delete Drive files, or summarize and edit Google Docs, Google Sheets, and Google Slides through one unified Google Drive plugin.",
+          "source": "openai-curated-remote/google-drive/0.1.16/skills/google-drive/SKILL.md"
+        },
+        {
+          "name": "google-drive-comments",
+          "folder": "google-drive-comments",
+          "description": "Write, reply to, and resolve Google Drive comments on Docs, Sheets, Slides, and Drive files with evidence-backed location context. Use when the user asks to leave comments, review a file with comments, respond to comment threads, or resolve Drive comments.",
+          "source": "openai-curated-remote/google-drive/0.1.16/skills/google-drive-comments/SKILL.md"
+        },
+        {
+          "name": "google-sheets",
+          "folder": "google-sheets",
+          "description": "Analyze and edit connected Google Sheets with range precision. Use when the user wants to create Google Sheets, find a spreadsheet, inspect tabs or ranges, search rows, plan formulas, create or repair charts, clean or restructure tables, write concise summaries, or make explicit cell-range updates.",
+          "source": "openai-curated-remote/google-drive/0.1.16/skills/google-sheets/SKILL.md"
+        },
+        {
+          "name": "google-slides",
+          "folder": "google-slides",
+          "description": "Route Google Slides authoring requests and derive a design system from a native template or reference deck. Use this skill when the user provides an existing native Google Slides deck as a template, reference, or prior-period source, or asks to edit, update, repair, restyle, or clean up an existing native Google Slides deck. Use the Presentations skill instead for net-new presentation creation when no existing native Google Slides deck must be followed.",
+          "source": "openai-curated-remote/google-drive/0.1.16/skills/google-slides/SKILL.md"
+        }
+      ],
+      "skill_count": 5
+    },
+    {
+      "id": "notion@openai-curated-remote",
+      "provider": "openai-curated-remote",
+      "name": "notion",
+      "display_name": "Notion",
+      "cache_version": "0.1.8",
+      "manifest_version": "0.1.8",
+      "description": "Notion workflows for implementation planning, research synthesis, meeting preparation, and knowledge capture.",
+      "author": "OpenAI",
+      "license": "MIT",
+      "homepage": "https://www.notion.so/",
+      "repository": "https://github.com/openai/plugins",
+      "source": "openai-curated-remote/notion/0.1.8",
+      "skills": [
+        {
+          "name": "notion-knowledge-capture",
+          "folder": "notion-knowledge-capture",
+          "description": "Capture conversations and decisions into structured Notion pages; use when turning chats/notes into wiki entries, how-tos, decisions, or FAQs with proper linking.",
+          "source": "openai-curated-remote/notion/0.1.8/skills/notion-knowledge-capture/SKILL.md"
+        },
+        {
+          "name": "notion-meeting-intelligence",
+          "folder": "notion-meeting-intelligence",
+          "description": "Prepare meeting materials with Notion context and supplemental research; use when gathering context, drafting agendas/pre-reads, and tailoring materials to attendees.",
+          "source": "openai-curated-remote/notion/0.1.8/skills/notion-meeting-intelligence/SKILL.md"
+        },
+        {
+          "name": "notion-research-documentation",
+          "folder": "notion-research-documentation",
+          "description": "Research across Notion and synthesize into structured documentation; use when gathering info from multiple Notion sources to produce briefs, comparisons, or reports with citations.",
+          "source": "openai-curated-remote/notion/0.1.8/skills/notion-research-documentation/SKILL.md"
+        },
+        {
+          "name": "notion-spec-to-implementation",
+          "folder": "notion-spec-to-implementation",
+          "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them.",
+          "source": "openai-curated-remote/notion/0.1.8/skills/notion-spec-to-implementation/SKILL.md"
+        }
+      ],
+      "skill_count": 4
+    },
+    {
+      "id": "openai-templates@openai-curated-remote",
+      "provider": "openai-curated-remote",
+      "name": "openai-templates",
+      "display_name": "Default templates",
+      "cache_version": "0.1.1",
+      "manifest_version": "0.1.1",
+      "description": "OpenAI default document, presentation, and spreadsheet templates.",
+      "author": "OpenAI",
+      "license": "Proprietary",
+      "homepage": "https://github.com/openai/oai-maintained-plugins/tree/main/plugins/openai-templates",
+      "repository": "https://github.com/openai/oai-maintained-plugins/tree/main/plugins/openai-templates",
+      "source": "openai-curated-remote/openai-templates/0.1.1",
+      "skills": [
+        {
+          "name": "artifact-template-analytics-dashboard",
+          "folder": "artifact-template-analytics-dashboard",
+          "description": "Create a spreadsheet using the Analytics Dashboard template and its retained reference file. Use when the user selects or names Analytics Dashboard. Monitor acquisition, engagement, retention, revenue, and conversion funnel KPIs with charts.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/SKILL.md",
+          "artifact_kind": "spreadsheet"
+        },
+        {
+          "name": "artifact-template-business-review",
+          "folder": "artifact-template-business-review",
+          "description": "Create a presentation using the Business Review template and its retained reference file. Use when the user selects or names Business Review. Review business performance, KPIs, segment results, strategic priorities, decisions, and outlook.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/SKILL.md",
+          "artifact_kind": "presentation"
+        },
+        {
+          "name": "artifact-template-design-report",
+          "folder": "artifact-template-design-report",
+          "description": "Create a document using the Design Report template and its retained reference file. Use when the user selects or names Design Report. Produce design reports with an executive summary, key findings, implications, recommendations, and appendix.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/SKILL.md",
+          "artifact_kind": "document"
+        },
+        {
+          "name": "artifact-template-experiment-analysis",
+          "folder": "artifact-template-experiment-analysis",
+          "description": "Create a document using the Experiment Analysis template and its retained reference file. Use when the user selects or names Experiment Analysis. Analyze experiments with hypotheses, methodology, results, interpretation, limitations, and next steps.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/SKILL.md",
+          "artifact_kind": "document"
+        },
+        {
+          "name": "artifact-template-financial-budget",
+          "folder": "artifact-template-financial-budget",
+          "description": "Create a spreadsheet using the Financial Budget template and its retained reference file. Use when the user selects or names Financial Budget. Model actuals, budget and scenario forecasts, variances, cash runway, and departmental plans.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/SKILL.md",
+          "artifact_kind": "spreadsheet"
+        },
+        {
+          "name": "artifact-template-investment-committee-memo",
+          "folder": "artifact-template-investment-committee-memo",
+          "description": "Create a document using the Investment Committee Memo template and its retained reference file. Use when the user selects or names Investment Committee Memo. Prepare investment committee memos with the thesis, transaction details, financial analysis, risks, and recommendation.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/SKILL.md",
+          "artifact_kind": "document"
+        },
+        {
+          "name": "artifact-template-legal-memorandum",
+          "folder": "artifact-template-legal-memorandum",
+          "description": "Create a document using the Legal Memorandum template and its retained reference file. Use when the user selects or names Legal Memorandum. Draft legal memoranda with the issue, brief answer, relevant facts, analysis, and conclusion.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/SKILL.md",
+          "artifact_kind": "document"
+        },
+        {
+          "name": "artifact-template-market-trends-report",
+          "folder": "artifact-template-market-trends-report",
+          "description": "Create a presentation using the Market Trends Report template and its retained reference file. Use when the user selects or names Market Trends Report. Communicate market or industry trends, supporting evidence, implications, and recommended responses.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/SKILL.md",
+          "artifact_kind": "presentation"
+        },
+        {
+          "name": "artifact-template-minimal-letterhead",
+          "folder": "artifact-template-minimal-letterhead",
+          "description": "Create a document using the Minimal Letterhead template and its retained reference file. Use when the user selects or names Minimal Letterhead. Write professional business letters with sender, recipient, message, and signature fields in a minimal letterhead layout.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/SKILL.md",
+          "artifact_kind": "document"
+        },
+        {
+          "name": "artifact-template-operating-calendar",
+          "folder": "artifact-template-operating-calendar",
+          "description": "Create a spreadsheet using the Operating Calendar template and its retained reference file. Use when the user selects or names Operating Calendar. Plan annual and monthly operating milestones, campaigns, launches, deadlines, and recurring events.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/SKILL.md",
+          "artifact_kind": "spreadsheet"
+        },
+        {
+          "name": "artifact-template-operating-review",
+          "folder": "artifact-template-operating-review",
+          "description": "Create a presentation using the Operating Review template and its retained reference file. Use when the user selects or names Operating Review. Run weekly operating reviews with scorecards, functional updates, risks, decisions, and action items.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/SKILL.md",
+          "artifact_kind": "presentation"
+        },
+        {
+          "name": "artifact-template-project-kickoff",
+          "folder": "artifact-template-project-kickoff",
+          "description": "Create a presentation using the Project Kickoff template and its retained reference file. Use when the user selects or names Project Kickoff. Align teams on project goals, scope, roles, milestones, risks, and the working model.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/SKILL.md",
+          "artifact_kind": "presentation"
+        },
+        {
+          "name": "artifact-template-project-tracker",
+          "folder": "artifact-template-project-tracker",
+          "description": "Create a spreadsheet using the Project Tracker template and its retained reference file. Use when the user selects or names Project Tracker. Manage workstreams, tasks, owners, status, priority, dates, launch pulse, and a Gantt schedule.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/SKILL.md",
+          "artifact_kind": "spreadsheet"
+        },
+        {
+          "name": "artifact-template-sales-pipeline",
+          "folder": "artifact-template-sales-pipeline",
+          "description": "Create a spreadsheet using the Sales Pipeline template and its retained reference file. Use when the user selects or names Sales Pipeline. Track opportunities, stages, owners, deal sizes, probabilities, forecasts, next steps, and risks.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/SKILL.md",
+          "artifact_kind": "spreadsheet"
+        },
+        {
+          "name": "artifact-template-simple-dark-mode",
+          "folder": "artifact-template-simple-dark-mode",
+          "description": "Create a presentation using the Simple Dark Mode template and its retained reference file. Use when the user selects or names Simple Dark Mode. Create clean dark-mode presentations with bold typography, simple sections, charts, and imagery.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/SKILL.md",
+          "artifact_kind": "presentation"
+        },
+        {
+          "name": "artifact-template-simple-light-mode",
+          "folder": "artifact-template-simple-light-mode",
+          "description": "Create a presentation using the Simple Light Mode template and its retained reference file. Use when the user selects or names Simple Light Mode. Create clean light-mode presentations with spacious typography, simple sections, charts, and imagery.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/SKILL.md",
+          "artifact_kind": "presentation"
+        },
+        {
+          "name": "artifact-template-strategy-memorandum",
+          "folder": "artifact-template-strategy-memorandum",
+          "description": "Create a document using the Strategy Memorandum template and its retained reference file. Use when the user selects or names Strategy Memorandum. Present strategic context, choices, rationale, risks, milestones, and a clear recommendation.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/SKILL.md",
+          "artifact_kind": "document"
+        },
+        {
+          "name": "artifact-template-system-design",
+          "folder": "artifact-template-system-design",
+          "description": "Create a document using the System Design template and its retained reference file. Use when the user selects or names System Design. Document system architecture, requirements, components, data flows, APIs, tradeoffs, and operational considerations.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/SKILL.md",
+          "artifact_kind": "document"
+        },
+        {
+          "name": "artifact-template-team-alignment",
+          "folder": "artifact-template-team-alignment",
+          "description": "Create a presentation using the Team Alignment template and its retained reference file. Use when the user selects or names Team Alignment. Facilitate team offsites and planning with context, goals, priorities, decisions, and action items.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/SKILL.md",
+          "artifact_kind": "presentation"
+        },
+        {
+          "name": "artifact-template-three-statement-forecast",
+          "folder": "artifact-template-three-statement-forecast",
+          "description": "Create a spreadsheet using the Three-Statement Forecast template and its retained reference file. Use when the user selects or names Three-Statement Forecast. Build an integrated income statement, balance sheet, and cash flow forecast with assumptions, checks, and an executive summary.",
+          "source": "openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/SKILL.md",
+          "artifact_kind": "spreadsheet"
+        }
+      ],
+      "skill_count": 20,
+      "classification": "official-default-templates",
+      "classification_evidence": [
+        "Manifest identifies OpenAI as author and describes default document, presentation, and spreadsheet templates.",
+        "Manifest declares a Proprietary license and points to the OpenAI-maintained plugin repository.",
+        "All 20 artifact-template.json files refer only to packaged assets/reference files and assets/preview.png."
+      ]
+    },
+    {
+      "id": "plugin-management@openai-curated-remote",
+      "provider": "openai-curated-remote",
+      "name": "plugin-management",
+      "display_name": "Plugin Management",
+      "cache_version": "0.1.0",
+      "manifest_version": "0.1.0",
+      "description": "Discover relevant plugins and manage app connections, permissions, and dependencies.",
+      "author": "OpenAI",
+      "license": "Proprietary",
+      "homepage": "https://openai.com/",
+      "repository": "https://github.com/openai/openai/tree/master/chatgpt/oai-maintained-plugins/plugins/plugin-management",
+      "source": "openai-curated-remote/plugin-management/0.1.0",
+      "skills": [
+        {
+          "name": "plugin-management",
+          "folder": "plugin-management",
+          "description": "Discover and suggest relevant plugins, inspect app permissions and dependencies, and manage plugin connections or removal. Use when the user asks about plugins or when a task would materially benefit from an external app, account, service, or data source that available tools cannot access.",
+          "source": "openai-curated-remote/plugin-management/0.1.0/skills/plugin-management/SKILL.md"
+        }
+      ],
+      "skill_count": 1
+    },
+    {
+      "id": "documents@openai-primary-runtime",
+      "provider": "openai-primary-runtime",
+      "name": "documents",
+      "display_name": "Documents",
+      "cache_version": "26.826.12353",
+      "manifest_version": "26.826.12353",
+      "description": "Create and edit document artifacts in Codex, including Word files and Google Docs.",
+      "author": "OpenAI",
+      "license": "MIT",
+      "homepage": "https://openai.com/",
+      "repository": "https://github.com/openai/openai",
+      "source": "openai-primary-runtime/documents/26.826.12353",
+      "skills": [
+        {
+          "name": "documents",
+          "folder": "documents",
+          "description": "Create, edit, redline, and comment on `.docx`, Word, and Google Docs-targeted document artifacts inside the container, with a strict render-and-verify workflow. Use `render_docx.py` to generate page PNGs (and optional PDF) for visual QA, then iterate until layout is flawless before delivering the final document.",
+          "source": "openai-primary-runtime/documents/26.826.12353/skills/documents/SKILL.md"
+        }
+      ],
+      "skill_count": 1
+    },
+    {
+      "id": "pdf@openai-primary-runtime",
+      "provider": "openai-primary-runtime",
+      "name": "pdf",
+      "display_name": "PDF",
+      "cache_version": "26.826.12353",
+      "manifest_version": "26.826.12353",
+      "description": "Read, create, inspect, render, and verify PDF files in Codex.",
+      "author": "OpenAI",
+      "license": "MIT",
+      "homepage": "https://openai.com/",
+      "repository": "https://github.com/openai/openai",
+      "source": "openai-primary-runtime/pdf/26.826.12353",
+      "skills": [
+        {
+          "name": "pdf",
+          "folder": "pdf",
+          "description": "Read, create, inspect, render, and verify PDF files where visual layout matters, including fillable AcroForms. Use Poppler rendering plus Python tools such as reportlab, pdfplumber, and pypdf for generation and extraction.",
+          "source": "openai-primary-runtime/pdf/26.826.12353/skills/pdf/SKILL.md"
+        }
+      ],
+      "skill_count": 1
+    },
+    {
+      "id": "presentations@openai-primary-runtime",
+      "provider": "openai-primary-runtime",
+      "name": "presentations",
+      "display_name": "Presentations",
+      "cache_version": "26.826.12353",
+      "manifest_version": "26.826.12353",
+      "description": "Create, edit, render, verify, and export presentation slide decks. Use when Codex needs to build or modify a deck, slidedeck, presentation deck, slide deck, slides, PowerPoint, Google Slides, PPT, PPTX, .ppt, or .pptx file.",
+      "author": "OpenAI",
+      "license": "MIT",
+      "homepage": "https://openai.com/",
+      "repository": "https://github.com/openai/openai",
+      "source": "openai-primary-runtime/presentations/26.826.12353",
+      "skills": [
+        {
+          "name": "Presentations",
+          "folder": "presentations",
+          "description": "Read, create or edit PowerPoint or Google Slides decks. Use for presentation, slide deck, PowerPoint, PPT, PPTX, or Google Slides requests.",
+          "source": "openai-primary-runtime/presentations/26.826.12353/skills/presentations/SKILL.md"
+        }
+      ],
+      "skill_count": 1
+    },
+    {
+      "id": "spreadsheets@openai-primary-runtime",
+      "provider": "openai-primary-runtime",
+      "name": "spreadsheets",
+      "display_name": "Spreadsheets",
+      "cache_version": "26.826.12353",
+      "manifest_version": "26.826.12353",
+      "description": "Create, edit, analyze, visualize, render, and export spreadsheets, Microsoft Excel or Google Sheets-ready workbooks in Codex.",
+      "author": "OpenAI",
+      "license": "MIT",
+      "homepage": "https://openai.com/",
+      "repository": "https://github.com/openai/openai",
+      "source": "openai-primary-runtime/spreadsheets/26.826.12353",
+      "skills": [
+        {
+          "name": "excel-live-control",
+          "folder": "excel-live-control",
+          "description": "Control an open or active Microsoft Excel workbook through the ChatGPT add-in or connected session. Use when the user tags the Microsoft Excel app in Codex or follows up on an established live Excel task. Do not use for standalone spreadsheet files or Google Sheets.",
+          "source": "openai-primary-runtime/spreadsheets/26.826.12353/skills/excel-live-control/SKILL.md"
+        },
+        {
+          "name": "Spreadsheets",
+          "folder": "spreadsheets",
+          "description": "Create, edit, analyze, and verify standalone spreadsheet files or Google Sheets-ready workbooks, including .xlsx, .xls, .csv, and .tsv. Do not use for live controlling Microsoft Excel app or a live Excel session.",
+          "source": "openai-primary-runtime/spreadsheets/26.826.12353/skills/spreadsheets/SKILL.md"
+        }
+      ],
+      "skill_count": 2
+    },
+    {
+      "id": "template-creator@openai-primary-runtime",
+      "provider": "openai-primary-runtime",
+      "name": "template-creator",
+      "display_name": "Template Creator",
+      "cache_version": "26.826.12353",
+      "manifest_version": "26.826.12353",
+      "description": "Create and update personal templates from files, Google Docs, Slides, and Sheets links, ImageGen or Product Design images, emails, Slack messages, and Site projects.",
+      "author": "OpenAI",
+      "license": "Proprietary",
+      "homepage": "https://openai.com/",
+      "repository": "https://github.com/openai/openai",
+      "source": "openai-primary-runtime/template-creator/26.826.12353",
+      "skills": [
+        {
+          "name": "template-creator",
+          "folder": "template-creator",
+          "description": "Create or update a reusable personal Codex artifact-template skill. Use when the user invokes $template-creator or asks in natural language to create a reusable template from a reference document, presentation, spreadsheet, Google Docs, Slides, or Sheets link, ImageGen or Product Design image, email, Slack message, or Site project, or explicitly asks to edit or update a passed artifact-template skill. Do not use for one-off creation from an existing template.",
+          "source": "openai-primary-runtime/template-creator/26.826.12353/skills/template-creator/SKILL.md"
+        }
+      ],
+      "skill_count": 1
+    }
+  ]
+}

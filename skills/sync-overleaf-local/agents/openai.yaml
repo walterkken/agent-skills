@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local LaTeX Paper Writer"
+  short_description: "Write, compile, and version papers locally"
+  default_prompt: "Use $sync-overleaf-local to write my paper as local LaTeX, compile it, and save a Git version."

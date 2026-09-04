@@ -1,0 +1,4 @@
+interface:
+  display_name: "研究证据审计助理"
+  short_description: "系统核实引文、发现证据规律、揭露研究矛盾并定位关键证据缺口"
+  default_prompt: "Use $research-evidence-auditor to audit these sources and produce a traceable evidence report."

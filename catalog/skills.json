@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-09-04",
+  "skills": [
+    {
+      "name": "nature-writing",
+      "category": "academic-writing",
+      "description_zh": "论文构思、结构与章节起草",
+      "path": "skills/nature-writing",
+      "source": "local-personal-skill-collection",
+      "files": 65,
+      "license_files": [],
+      "dependencies": [
+        "_shared"
+      ],
+      "windows_only": false
+    },
+    {
+      "name": "nature-polishing",
+      "category": "academic-writing",
+      "description_zh": "学术润色、翻译与 LaTeX 排版",
+      "path": "skills/nature-polishing",
+      "source": "local-personal-skill-collection",
+      "files": 29,
+      "license_files": [],
+      "dependencies": [
+        "_shared"
+      ],
+      "windows_only": false
+    },
+    {
+      "name": "sync-overleaf-local",
+      "category": "academic-writing",
+      "description_zh": "本地 LaTeX、Git 与 Overleaf 同步",
+      "path": "skills/sync-overleaf-local",
+      "source": "local-personal-skill-collection",
+      "files": 9,
+      "license_files": [],
+      "dependencies": [],
+      "windows_only": true
+    },
+    {
+      "name": "research-evidence-auditor",
+      "category": "research",
+      "description_zh": "证据核实、引文审核与研究比较",
+      "path": "skills/research-evidence-auditor",
+      "source": "local-personal-skill-collection",
+      "files": 3,
+      "license_files": [],
+      "dependencies": [],
+      "windows_only": false
+    },
+    {
+      "name": "reading-notes",
+      "category": "research",
+      "description_zh": "阅读笔记、研究线索与待办提炼",
+      "path": "skills/reading-notes",
+      "source": "local-personal-skill-collection",
+      "files": 17,
+      "license_files": [],
+      "dependencies": [],
+      "windows_only": false
+    },
+    {
+      "name": "pdf-to-markdown",
+      "category": "documents",
+      "description_zh": "PDF 文本提取、OCR 与 Markdown 转换",
+      "path": "skills/pdf-to-markdown",
+      "source": "local-personal-skill-collection",
+      "files": 16,
+      "license_files": [
+        "skills/pdf-to-markdown/LICENSE"
+      ],
+      "dependencies": [],
+      "windows_only": false
+    },
+    {
+      "name": "notion-knowledge-capture",
+      "category": "knowledge-management",
+      "description_zh": "Notion 知识整理与决策记录",
+      "path": "skills/notion-knowledge-capture",
+      "source": "local-personal-skill-collection",
+      "files": 18,
+      "license_files": [
+        "skills/notion-knowledge-capture/LICENSE.txt"
+      ],
+      "dependencies": [],
+      "windows_only": false
+    },
+    {
+      "name": "hatch-pet",
+      "category": "creative",
+      "description_zh": "Codex 动画宠物生成、组装和检查",
+      "path": "skills/hatch-pet",
+      "source": "local-personal-skill-collection",
+      "files": 29,
+      "license_files": [
+        "skills/hatch-pet/LICENSE.txt"
+      ],
+      "dependencies": [],
+      "windows_only": false
+    },
+    {
+      "name": "-21risk-automation",
+      "category": "automation",
+      "description_zh": "通过 Rube MCP 操作 21risk",
+      "path": "skills/-21risk-automation",
+      "source": "local-personal-skill-collection",
+      "files": 1,
+      "license_files": [],
+      "dependencies": [],
+      "windows_only": false
+    }
+  ],
+  "shared": "skills/_shared"
+}

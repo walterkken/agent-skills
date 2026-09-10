@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-09-04",
+  "snapshot_date": "2026-09-10",
   "skills": [
     {
       "name": "nature-writing",
@@ -108,6 +108,19 @@
       "source": "local-personal-skill-collection",
       "files": 1,
       "license_files": [],
+      "dependencies": [],
+      "windows_only": false
+    },
+    {
+      "name": "skillrover",
+      "category": "skill-discovery",
+      "description_zh": "按任务搜索、核查和选择 Skill，并继续工作",
+      "path": "skills/skillrover",
+      "source": "walterkken/agent-skills",
+      "files": 5,
+      "license_files": [
+        "skills/skillrover/LICENSE"
+      ],
       "dependencies": [],
       "windows_only": false
     }

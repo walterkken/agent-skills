@@ -1,0 +1,4 @@
+interface:
+  display_name: "SkillRover · 寻技"
+  short_description: "Find, inspect, and choose skills for the task at hand"
+  default_prompt: "Use $skillrover to find a suitable skill for this task, explain the choice briefly, and continue the work."

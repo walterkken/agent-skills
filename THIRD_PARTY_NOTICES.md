@@ -4,6 +4,7 @@
 
 | 内容 | 本地来源证据 | 处理方式 |
 | --- | --- | --- |
+| `skillrover` 与 `agents/skillrover/` | 本仓库新增的 Skill 搜索与选择 Agent，维护者 walterkken | 新增内容按 `skills/skillrover/LICENSE` 的 MIT 条款使用；不改变其他组件许可 |
 | `hatch-pet` | 包内 `LICENSE.txt` 为 Apache-2.0；未核实独立上游地址 | 保留许可证与技能包 |
 | `notion-knowledge-capture` | 包内 `LICENSE.txt` 为 MIT，Notion Labs | 保留许可证；插件同名版本单列依赖 |
 | `pdf-to-markdown` | README 指向 [paulmaunders/claude-skill-pdf-to-markdown](https://github.com/paulmaunders/claude-skill-pdf-to-markdown)，包内 AGPL-3.0 | 保留许可证与源码；将个人 uv 路径改为环境变量示例 |

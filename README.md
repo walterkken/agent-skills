@@ -2,12 +2,15 @@
 
 个人 Agent 与 Skill 整理库：论文协作、学术写作、研究阅读、文档处理、知识管理与自动化。
 
-本次快照：**2026-09-04**。收录 **4 个 Agent 角色模板、9 个已安装的个人目录 Skills、1 组共享资料**，并为系统技能和插件技能建立来源目录。这里的“个人目录”表示原安装位置，作者与许可证归属见 [来源说明](THIRD_PARTY_NOTICES.md)。
+更新于 **2026-09-10**。收录 **4 个学术 Agent 角色模板、SkillRover 选型 Agent、10 个 Skills 和 1 组共享资料**，并为系统技能和插件技能建立来源目录。作者与许可证归属见 [来源说明](THIRD_PARTY_NOTICES.md)。
+
+**新增 [SkillRover · 寻技](agents/skillrover/README.md)**：工作中查找别人的 Skill，读过实现后选一个合适的，接着完成任务。[English](agents/skillrover/README.en.md)。
 
 ## 快速导航
 
 | 需要做什么 | 从这里开始 |
 | --- | --- |
+| 搜索、比较并选择合适的 Skill | [SkillRover · 寻技](agents/skillrover/README.md) |
 | 组织写作、编码、检查和审核协作 | [四角色 Agent](agents/academic/README.md) · [协作流程](agents/academic/workflow.md) |
 | 查找可用技能 | [技能分类表](#技能分类) · [机器可读清单](catalog/skills.json) |
 | 安装技能或迁移到另一台机器 | [安装说明](docs/INSTALL.md) |
@@ -19,6 +22,7 @@
 
 | 分类 | Skill | 用途 |
 | --- | --- | --- |
+| 技能选型 | [skillrover](skills/skillrover/SKILL.md) | 按任务搜索、核查和选择 Skill，并继续工作 |
 | 学术写作 | [nature-writing](skills/nature-writing/SKILL.md) | 研究主线、论文结构与章节起草 |
 | 学术写作 | [nature-polishing](skills/nature-polishing/SKILL.md) | 英文润色、中文转写与 LaTeX 排版 |
 | 论文工程 | [sync-overleaf-local](skills/sync-overleaf-local/SKILL.md) | Windows / E 盘上的本地 LaTeX、Git 与 Overleaf 同步 |
@@ -35,9 +39,9 @@
 
 ```text
 agent-skills/
-├── agents/academic/        # 四个角色与交接流程
+├── agents/                 # 学术协作角色与 SkillRover
 ├── instructions/           # 可选全局指令模板
-├── skills/                 # 9 个完整技能包及 _shared
+├── skills/                 # 10 个完整技能包及 _shared
 ├── catalog/                # 个人、系统与插件技能清单
 ├── docs/                   # 安装和维护说明
 ├── scripts/                # 安装与发布前检查

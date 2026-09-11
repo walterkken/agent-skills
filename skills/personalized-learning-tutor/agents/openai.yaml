@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personalized Learning Tutor · 知识翻译师"
+  short_description: "Teach new ideas through the language a learner already knows"
+  default_prompt: "Use $personalized-learning-tutor to explain this topic using my familiar vocabulary and reasoning, then check whether I can apply it."

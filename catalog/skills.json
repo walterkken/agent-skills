@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-09-10",
+  "snapshot_date": "2026-09-11",
   "skills": [
     {
       "name": "nature-writing",
@@ -120,6 +120,19 @@
       "files": 5,
       "license_files": [
         "skills/skillrover/LICENSE"
+      ],
+      "dependencies": [],
+      "windows_only": false
+    },
+    {
+      "name": "personalized-learning-tutor",
+      "category": "learning",
+      "description_zh": "根据学习者熟悉的语言与概念讲解新知识，并核查迁移理解",
+      "path": "skills/personalized-learning-tutor",
+      "source": "walterkken/agent-skills",
+      "files": 6,
+      "license_files": [
+        "skills/personalized-learning-tutor/LICENSE"
       ],
       "dependencies": [],
       "windows_only": false

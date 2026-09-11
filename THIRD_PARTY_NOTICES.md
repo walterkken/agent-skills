@@ -4,6 +4,7 @@
 
 | 内容 | 本地来源证据 | 处理方式 |
 | --- | --- | --- |
+| `skill-adapter` 与 `agents/skill-adapter/` | 本仓库新增的 Skill 适配工具，维护者 walterkken | 新增内容按 `skills/skill-adapter/LICENSE` 的 MIT 条款使用；官方文档仅链接引用，无官方背书 |
 | `personalized-learning-tutor` 与 `agents/personalized-learning-tutor/` | 本仓库新增的个性化教学 Skill 与 Agent，维护者 walterkken | 新增内容按 `skills/personalized-learning-tutor/LICENSE` 的 MIT 条款使用；不改变其他组件许可 |
 | `skillrover` 与 `agents/skillrover/` | 本仓库新增的 Skill 搜索与选择 Agent，维护者 walterkken | 新增内容按 `skills/skillrover/LICENSE` 的 MIT 条款使用；不改变其他组件许可 |
 | `hatch-pet` | 包内 `LICENSE.txt` 为 Apache-2.0；未核实独立上游地址 | 保留许可证与技能包 |

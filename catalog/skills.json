@@ -136,6 +136,19 @@
       ],
       "dependencies": [],
       "windows_only": false
+    },
+    {
+      "name": "skill-adapter",
+      "category": "skill-maintenance",
+      "description_zh": "根据官方说明、当前环境和实际失败证据适配已有 Skill",
+      "path": "skills/skill-adapter",
+      "source": "walterkken/agent-skills",
+      "files": 6,
+      "license_files": [
+        "skills/skill-adapter/LICENSE"
+      ],
+      "dependencies": [],
+      "windows_only": false
     }
   ],
   "shared": "skills/_shared"

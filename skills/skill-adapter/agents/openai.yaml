@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Adapter · 技能适配器"
+  short_description: "Adapt skills to official guidance and real task evidence"
+  default_prompt: "Use $skill-adapter to adapt this skill to current OpenAI guidance and my environment, preserving its purpose and checking the changes."

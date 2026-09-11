@@ -2,16 +2,19 @@
 
 个人 Agent 与 Skill 整理库：论文协作、学术写作、研究阅读、文档处理、知识管理与自动化。
 
-更新于 **2026-09-11**。收录 **4 个学术 Agent 角色模板、SkillRover 选型 Agent、知识翻译师教学 Agent、11 个 Skills 和 1 组共享资料**，并为系统技能和插件技能建立来源目录。作者与许可证归属见 [来源说明](THIRD_PARTY_NOTICES.md)。
+更新于 **2026-09-11**。收录 **4 个学术 Agent 角色模板、SkillRover 选型 Agent、知识翻译师教学 Agent、12 个 Skills 和 1 组共享资料**，并为系统技能和插件技能建立来源目录。作者与许可证归属见 [来源说明](THIRD_PARTY_NOTICES.md)。
 
 **新增 [SkillRover · 寻技](agents/skillrover/README.md)**：工作中查找别人的 Skill，读过实现后选一个合适的，接着完成任务。[English](agents/skillrover/README.en.md)。
 
 **新增 [Personalized Learning Tutor · 知识翻译师](agents/personalized-learning-tutor/README.md)**：从学习者熟悉的语言和概念出发解释新知识。[English](agents/personalized-learning-tutor/README.en.md)。
 
+**新增 [Skill Adapter · 技能适配器](agents/skill-adapter/README.md)**：按官方说明、运行环境和实际失败记录适配已有 Skill。[English](agents/skill-adapter/README.en.md)。
+
 ## 快速导航
 
 | 需要做什么 | 从这里开始 |
 | --- | --- |
+| 修复、迁移和改进已有 Skill | [Skill Adapter](agents/skill-adapter/README.md) |
 | 用熟悉的语言学习陌生知识 | [知识翻译师](agents/personalized-learning-tutor/README.md) |
 | 搜索、比较并选择合适的 Skill | [SkillRover · 寻技](agents/skillrover/README.md) |
 | 组织写作、编码、检查和审核协作 | [四角色 Agent](agents/academic/README.md) · [协作流程](agents/academic/workflow.md) |
@@ -25,6 +28,7 @@
 
 | 分类 | Skill | 用途 |
 | --- | --- | --- |
+| 技能维护 | [skill-adapter](skills/skill-adapter/SKILL.md) | 核对规范、适配环境、按失败证据改进 |
 | 个性化学习 | [personalized-learning-tutor](skills/personalized-learning-tutor/SKILL.md) | 用已有概念理解新知识，检查迁移理解 |
 | 技能选型 | [skillrover](skills/skillrover/SKILL.md) | 按任务搜索、核查和选择 Skill，并继续工作 |
 | 学术写作 | [nature-writing](skills/nature-writing/SKILL.md) | 研究主线、论文结构与章节起草 |
@@ -45,7 +49,7 @@
 agent-skills/
 ├── agents/                 # 学术协作、技能选型与个性化教学
 ├── instructions/           # 可选全局指令模板
-├── skills/                 # 11 个完整技能包及 _shared
+├── skills/                 # 12 个完整技能包及 _shared
 ├── catalog/                # 个人、系统与插件技能清单
 ├── docs/                   # 安装和维护说明
 ├── scripts/                # 安装与发布前检查

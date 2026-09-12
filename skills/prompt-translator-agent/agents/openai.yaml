@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prompt Translator Agent · 提示词翻译官"
+  short_description: "把日常表达转成简洁专业指令，明确修改范围、保留内容与验收标准"
+  default_prompt: "用 $prompt-translator-agent 把我的需求翻译成简洁、可执行的专业指令。"

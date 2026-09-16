@@ -47,19 +47,9 @@ Agent 会先返回类似：
 
 ## 例程库
 
-当前第一版目录覆盖：
+当前目录包含 18 个官方例程/组件族入口，覆盖：Remote Microgrid、Grid-Forming Converter、DFIG Wind Power System、Wind Turbine、三相/单相并网 PV、BESS/BMS、PMSM、感应机、IEEE 9-Bus、距离保护、三相故障、VSC-HVDC、MMC-HVDC、自定义三相组件库、负荷流、变压器组件族，以及 SPS → Simscape Electrical 迁移工具。
 
-- Remote Microgrid
-- Grid-Forming Converter
-- DFIG Wind Power System
-- Wind Turbine supervisory / MPPT / pitch
-- Three-Phase PMSM Drive
-- ThreePhaseExamples custom component library
-- Simscape Electrical load flow
-- Transformer component family
-- SPS → Simscape Electrical conversion workflow
-
-完整机器可读目录见 [`catalog/examples.json`](../../skills/simulink-electrical-builder/catalog/examples.json)。
+每个条目都记录用途、建模后端、保真度、所需产品、已知版本边界、官方来源和模块抽取原则。完整机器可读目录见 [`catalog/examples.json`](../../skills/simulink-electrical-builder/catalog/examples.json)。
 
 ## 兼容性原则
 

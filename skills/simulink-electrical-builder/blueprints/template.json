@@ -1,0 +1,45 @@
+{
+  "model_name": "ee_model",
+  "output_dir": ".",
+  "stop_time": 1.0,
+  "open_after_build": true,
+  "simulate_after_build": false,
+  "solver": {
+    "type": "Variable-step",
+    "name": "auto",
+    "max_step": "auto"
+  },
+  "modules": [
+    {
+      "name": "SOURCE",
+      "source_type": "placeholder",
+      "backend": "simscape-electrical-native",
+      "representation": "emt",
+      "unit_system": "si",
+      "nominal_frequency_hz": 50,
+      "position": [80, 120, 220, 220],
+      "description": "Replace with a locally resolved source/example subsystem after architecture confirmation."
+    },
+    {
+      "name": "NETWORK",
+      "source_type": "placeholder",
+      "backend": "simscape-electrical-native",
+      "representation": "emt",
+      "unit_system": "si",
+      "nominal_frequency_hz": 50,
+      "position": [320, 120, 460, 220],
+      "description": "Transformer/line/bus module."
+    },
+    {
+      "name": "LOAD",
+      "source_type": "placeholder",
+      "backend": "simscape-electrical-native",
+      "representation": "emt",
+      "unit_system": "si",
+      "nominal_frequency_hz": 50,
+      "position": [560, 120, 700, 220],
+      "description": "Replace with a compatible load subsystem."
+    }
+  ],
+  "connections": []
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Simulink Electrical Builder · 电气仿真搭建"
+  short_description: "先确认结构与用途，再从 MATLAB 例程中选兼容模块并生成可复现 Simulink 电气仿真"
+  default_prompt: "用 $simulink-electrical-builder 根据我的研究用途和系统结构，选择兼容的 MATLAB/Simulink 例程模块并搭建电气工程仿真。"

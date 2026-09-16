@@ -63,14 +63,14 @@ tf = any(strcmpi(names, target));
 end
 
 function tf = releaseAtOrAfter(actual, target)
-% Compare release strings such as R2025b and R2026a without newer helpers.
+% Compare release strings such as R2025b/2025b and R2026a without newer helpers.
 [aYear, aHalf] = parseRelease(actual);
 [tYear, tHalf] = parseRelease(target);
 tf = (aYear > tYear) || (aYear == tYear && aHalf >= tHalf);
 end
 
 function [yearValue, halfValue] = parseRelease(r)
-expr = '^R(\d{4})([ab])$';
+expr = '^R?(\d{4})([ab])$';
 t = regexp(r, expr, 'tokens', 'once');
 if isempty(t)
     yearValue = -inf;

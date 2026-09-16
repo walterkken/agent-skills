@@ -44,8 +44,6 @@ if bdIsLoaded(modelName)
 end
 
 new_system(modelName);
-cleanupObj = onCleanup(@() safeClose(modelName)); %#ok<NASGU>
-
 applyModelConfiguration(modelName, bp);
 
 mods = bp.modules;
@@ -84,9 +82,7 @@ for k = 1:numel(mods)
     end
 
     resolved(k).name = char(m.name);
-    if exist('source', 'var')
-        resolved(k).source = source;
-    end
+    resolved(k).source = source;
     resolved(k).destination = destination;
 end
 
@@ -141,8 +137,11 @@ report.generated_at = datestr(now, 31);
 
 writeModelReport(outputDir, report);
 
-if isfield(bp, 'open_after_build') && logical(bp.open_after_build)
+openAfterBuild = isfield(bp, 'open_after_build') && logical(bp.open_after_build);
+if openAfterBuild
     open_system(modelName);
+else
+    close_system(modelName, 0);
 end
 
 fprintf('Generated model: %s\n', outputFile);
@@ -331,14 +330,5 @@ if tf
     s = 'PASS';
 else
     s = 'FAIL';
-end
-end
-
-function safeClose(modelName)
-try
-    if bdIsLoaded(modelName)
-        close_system(modelName, 0);
-    end
-catch
 end
 end

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-09-12",
+  "snapshot_date": "2026-09-16",
   "skills": [
     {
       "name": "nature-writing",
@@ -159,6 +159,19 @@
       "files": 3,
       "license_files": [
         "skills/prompt-translator-agent/LICENSE"
+      ],
+      "dependencies": [],
+      "windows_only": false
+    },
+    {
+      "name": "simulink-electrical-builder",
+      "category": "engineering-simulation",
+      "description_zh": "先确认用途与系统结构，从 MATLAB/Simulink 官方例程选择兼容模块并生成可复现的电气工程 Simulink 仿真",
+      "path": "skills/simulink-electrical-builder",
+      "source": "walterkken/agent-skills",
+      "files": 9,
+      "license_files": [
+        "skills/simulink-electrical-builder/LICENSE"
       ],
       "dependencies": [],
       "windows_only": false

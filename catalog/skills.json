@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-09-16",
+  "snapshot_date": "2026-09-20",
   "skills": [
     {
       "name": "nature-writing",
@@ -172,6 +172,19 @@
       "files": 9,
       "license_files": [
         "skills/simulink-electrical-builder/LICENSE"
+      ],
+      "dependencies": [],
+      "windows_only": false
+    },
+    {
+      "name": "tokenoffload",
+      "category": "token-optimization",
+      "description_zh": "本地优先执行确定性任务，过滤和压缩中间结果后再使用 AI，降低 Token、上下文污染和无效工具往返",
+      "path": "skills/tokenoffload",
+      "source": "walterkken/agent-skills",
+      "files": 5,
+      "license_files": [
+        "skills/tokenoffload/LICENSE"
       ],
       "dependencies": [],
       "windows_only": false

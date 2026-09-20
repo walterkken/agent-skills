@@ -2,7 +2,9 @@
 
 个人 Agent 与 Skill 整理库：论文协作、学术写作、研究阅读、文档处理、知识管理、工程仿真与自动化。
 
-更新于 **2026-09-16**。收录 **4 个学术 Agent 角色模板、SkillRover 选型 Agent、知识翻译师教学 Agent、Simulink Electrical Builder 等 14 个 Skills 和 1 组共享资料**，并为系统技能和插件技能建立来源目录。作者与许可证归属见 [来源说明](THIRD_PARTY_NOTICES.md)。
+更新于 **2026-09-20**。收录 **4 个学术 Agent 角色模板、SkillRover 选型 Agent、知识翻译师教学 Agent、Simulink Electrical Builder、TokenOffload 等 15 个 Skills 和 1 组共享资料**，并为系统技能和插件技能建立来源目录。作者与许可证归属见 [来源说明](THIRD_PARTY_NOTICES.md)。
+
+**新增 [TokenOffload · 本地优先省 Token](agents/tokenoffload/README.md)**：Computer first, model last。优先用操作系统、本地软件、CLI、Python、SQL、正则和确定性代码完成输入输出与过滤，只把最小必要上下文交给 AI；包含渐进披露、diff-first、缓存、上下文压缩、按需工具加载和程序化工具编排等策略。
 
 **新增 [Simulink Electrical Builder · 电气仿真搭建](agents/simulink-electrical-builder/README.md)**：先确认研究用途与系统结构，再从 MATLAB / Simulink 官方例程中选择兼容模块，生成可复现的电气工程仿真；内置 Simscape Electrical / SPS 版本兼容与蓝图校验。
 
@@ -18,6 +20,7 @@
 
 | 需要做什么 | 从这里开始 |
 | --- | --- |
+| 节省 AI Token、本地优先执行 | [TokenOffload](agents/tokenoffload/README.md) |
 | 搭建电气工程 Simulink / Simscape 仿真 | [Simulink Electrical Builder](agents/simulink-electrical-builder/README.md) |
 | 把日常需求说准确、减少返工 | [Prompt Translator Agent · 提示词翻译官](agents/prompt-translator-agent/README.md) |
 | 修复、迁移和改进已有 Skill | [Skill Adapter](agents/skill-adapter/README.md) |
@@ -34,6 +37,7 @@
 
 | 分类 | Skill | 用途 |
 | --- | --- | --- |
+| Token 优化 | [tokenoffload](skills/tokenoffload/SKILL.md) | 本地优先执行确定性任务，过滤/聚合后再调用 AI，减少上下文与工具结果开销 |
 | 工程仿真 | [simulink-electrical-builder](skills/simulink-electrical-builder/SKILL.md) | 从 MATLAB 官方例程选取兼容模块，生成和验证电气工程 Simulink 模型 |
 | 需求表达 | [prompt-translator-agent](skills/prompt-translator-agent/SKILL.md) | 日常表达转专业操作，明确范围、保留项与验收标准 |
 | 技能维护 | [skill-adapter](skills/skill-adapter/SKILL.md) | 核对规范、适配环境、按失败证据改进 |
@@ -57,7 +61,7 @@
 agent-skills/
 ├── agents/                 # 学术协作、技能选型、教学、需求翻译与工程仿真 Agent
 ├── instructions/           # 可选全局指令模板
-├── skills/                 # 14 个完整技能包及 _shared
+├── skills/                 # 15 个完整技能包及 _shared
 ├── catalog/                # 个人、系统与插件技能清单
 ├── docs/                   # 安装和维护说明
 ├── scripts/                # 安装与发布前检查

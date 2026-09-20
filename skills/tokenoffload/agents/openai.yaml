@@ -1,0 +1,4 @@
+interface:
+  display_name: "TokenOffload · 本地优先省 Token"
+  short_description: "先让电脑和本地软件完成确定性工作，只把最小必要上下文交给 AI"
+  default_prompt: "Use $tokenoffload: complete deterministic work locally first, minimize context, then use AI only for the irreducible reasoning."
